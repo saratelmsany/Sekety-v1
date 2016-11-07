@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bkground1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context="com.example.user.sekety.DashBoard">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="99dp"
+            android:layout_weight="0.56">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/DashboardButton"
+                android:text="Home Page"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/text_size_large"
+                android:onClick="openHomepage"
+                android:drawableTop="@drawable/home"
+                android:id="@+id/button3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/DashboardButton"
+                android:onClick="openProfilepage"
+                android:drawableTop="@drawable/profile2"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/text_size_large"
+                android:text="Profile"
+                android:id="@+id/button2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="121dp"
+            android:layout_weight="0.38">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/DashboardButton"
+                android:onClick="openChatpage"
+                android:drawableTop="@drawable/chat2"
+                android:text="Chat"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/text_size_large"
+                android:id="@+id/button4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/DashboardButton"
+                android:onClick="openSeketypage"
+                android:drawableTop="@drawable/logocircle"
+                android:text="Sekety"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/text_size_large"
+                android:id="@+id/button5" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.sekety.Registration"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/userimage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#4DD0E1"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:text="User Name "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TFname"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginTop="30dp" />
+            <EditText
+                android:id="@+id/Tusername"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittextlayout"
+                android:gravity="left"
+                android:layout_marginRight="20dp"
+                android:ellipsize="start"
+                android:paddingLeft="10dp"
+
+                android:singleLine="true" />
+                <TextView
+                android:text="Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_below="@+id/Lname"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/pass"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edittextlayout"
+                android:inputType="textPassword"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/text2" />
+
+            <TextView
+                android:text="Re-password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text3"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_below="@+id/pass"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/re_pass"
+                android:text=""
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edittextlayout"
+                android:inputType="textPassword"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/text3" />
+
+            <TextView
+                android:text="E-mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text4"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_below="@+id/re_pass" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp
+                "
+                android:id="@+id/email"
+                android:singleLine="true"
+                android:background="@drawable/edittextlayout"
+                android:text=""
+                android:paddingLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/text4" />
+
+
+            <TextView
+                android:text="Age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text6"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_below="@+id/email"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/day"
+                    android:entries="@array/Days">
+
+                </Spinner>
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/month"
+                    android:entries="@array/Month">
+
+                </Spinner>
+
+                00000000
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/years"
+                    android:entries="@array/Years">
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:text="Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_gender"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_above="@+id/statusbar7"
+
+                />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/radiogroup">
+                <RadioButton android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    />
+                <RadioButton android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:text="Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text8"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_above="@+id/confirm"
+                android:layout_alignRight="@+id/text2"
+                android:layout_alignEnd="@+id/text2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/phone"
+                android:text=""
+                android:singleLine="true"
+                android:background="@drawable/edittextlayout"
+                android:layout_gravity="bottom"
+                android:paddingLeft="10dp"
+                android:layout_weight="1.02"
+                android:layout_alignBottom="@+id/text8"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:text="City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text9"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_above="@+id/confirm"
+                android:layout_alignRight="@+id/text2"
+                android:layout_alignEnd="@+id/text2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/city"
+                android:text=""
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:background="@drawable/edittextlayout"
+                android:layout_gravity="bottom"
+
+                android:layout_weight="1.02"
+                android:layout_alignBottom="@+id/text8"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="confirm"
+                android:id="@+id/confirm"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

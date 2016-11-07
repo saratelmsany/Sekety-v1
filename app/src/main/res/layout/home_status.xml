@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <!--<ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/user_photo"
+        android:src="@drawable/tmntdon"
+        android:scaleType="centerCrop" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#4DD0E1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name"
+        android:layout_toRightOf="@+id/user_photo"
+        android:text="User Name"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:text="day month at hour"
+        android:layout_toRightOf="@+id/user_photo"
+        android:layout_below="@+id/user_name"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_photo"
+        android:padding="16dp"
+        android:id="@+id/post"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_in_status"
+        android:layout_toRightOf="@+id/user_name"
+        android:paddingLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:id="@+id/photo"
+        android:layout_below="@+id/date"
+        android:layout_toRightOf="@+id/user_name"
+        android:layout_toEndOf="@+id/user_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/post"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/unlike" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_height="match_parent"
+
+            android:text="Comment"
+            android:id="@+id/commentbtn"
+            android:layout_width="37dp"
+            android:src="@drawable/comment"
+            android:textColor="#ffffff"
+            android:textStyle="bold|italic"
+            android:layout_margin="5dp"
+
+            android:paddingLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        android:layout_alignBottom="@+id/photo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

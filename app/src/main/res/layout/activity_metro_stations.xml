@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/metro">
+
+    <ImageView
+        android:src="@drawable/logodark2"
+        android:layout_width="662dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:id="@+id/logo" />
+
+    <LinearLayout
+        android:layout_width="417dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:id="@+id/lineno"
+            android:text="Line Number :"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#20385b"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:id="@+id/line_no"
+            android:text="Line No."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#b71d41"
+            android:layout_marginTop="25dp"
+
+
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lineroute"
+        android:text="Line Route"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#20385b"
+        android:textSize="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/line1_btn"
+        android:text="Line 1"
+        android:textSize="20dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:background="@drawable/shape"
+        android:layout_weight="0.04"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/lineroute"
+        android:layout_toLeftOf="@+id/lineroute"
+        android:layout_toStartOf="@+id/lineroute" />
+    <Button
+        android:id="@+id/line2_btn"
+        android:text="Line 2"
+        android:textSize="20dp"
+        android:layout_width="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:background="@drawable/shape"
+        android:layout_weight="0.04"
+
+        android:layout_alignTop="@+id/line1_btn"
+        android:layout_alignRight="@+id/lineroute"
+        android:layout_alignEnd="@+id/lineroute" />
+    <Button
+        android:id="@+id/line3_btn"
+        android:text="Line 3"
+        android:textSize="20dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:background="@drawable/shape"
+        android:layout_weight="0.04"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="5dp"
+
+        android:layout_alignTop="@+id/line2_btn"
+        android:layout_toRightOf="@+id/line2_btn"
+        android:layout_toEndOf="@+id/line2_btn" />
+
+    <TextView
+        android:id="@+id/line_no2"
+        android:text=""
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#b71d41"
+        android:layout_below="@+id/line2_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/line_route"
+        android:text="Line Route"
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="#b71d41"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+
+        android:layout_below="@+id/line_no2"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

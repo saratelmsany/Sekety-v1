@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilePicturePreview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#4DD0E1"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="94dp" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@drawable/shape"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/save_btn"
+            android:layout_below="@+id/btnPictureSelect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Gallery"
+            android:textStyle="bold"
+            android:id="@+id/btnPictureSelect"
+            android:background="@drawable/shape"
+            android:textColor="#ffffff"
+            android:onClick="btnClick"
+            android:layout_below="@+id/profilePicturePreview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete"
+            android:layout_width="356dp"
+            android:layout_height="67dp"
+            android:hint="Please Enter the Place!">
+
+
+        </AutoCompleteTextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/checkin"
+            android:layout_width="100dp"
+            android:layout_weight="1.15"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/checkin"
+            android:text="Check in"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/searchPlace"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/searchplace"
+            android:text="Search"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/st"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/sekety"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text=" Sekety"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="384dp"
+        android:layout_height="498dp"
+        tools:context="com.example.user.sekety.Search" />
+</LinearLayout>

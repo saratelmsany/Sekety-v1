@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Sekety</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="facebook_app_id">587250014772201</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_home_page">Home Page</string>
+    <string name="title_activity_registration">Registration</string>
+    <string-array name="Days">
+        <item>Days</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="Month">
+        <item>Month</item>
+        <item>January</item>
+        <item>Febraury</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="Years">
+
+        <item>Years</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
+        <item>1983</item>
+        <item>1982</item>
+        <item>1981</item>
+        <item>1980</item>
+        <item>1979</item>
+        <item>1978</item>
+        <item>1977</item>
+        <item>1976</item>
+        <item>1975</item>
+        <item>1974</item>
+        <item>1973</item>
+        <item>1972</item>
+        <item>1971</item>
+        <item>1970</item>
+
+
+
+    </string-array>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_edit_profile">Edit your Profile..</string>
+    <string name="title_activity_inbox">User List</string>
+    <string name="title_activity_followers">Followers</string>
+    <string name="title_activity_search">Search Places!</string>
+    <string name="title_activity_smart_transportation">Smart Transportation</string>
+    <string name="title_activity_bus_routes">Buses</string>
+    <string name="title_activity_metro_stations">Metros</string>
+    <string name="title_activity_following">Following</string>
+    <string name="title_activity_post">Post</string>
+    <string name="title_activity_tab_view">Home</string>
+    <string name="title_activity_dash_board">Dashboard</string>
+    <string name="username">User Name</string>
+    <string name="password">*********</string>
+    <string name="my_chats">My Chats</string>
+    <string name="all_chats">All Chats</string>
+    <string name="search">Search</string>
+    <string name="to">To:</string>
+    <string name="edit">Edit</string>
+    <string name="new_chat">New Chat</string>
+    <string name="alert_wait">Please wait...</string>
+    <string name="err_fields_empty">Please fill all the fields.</string>
+    <string name="err_singup">Error occurred while signup:</string>
+    <string name="err_login">Error occurred while login:</string>
+    <string name="err_users">Error occurred while finding users:</string>
+    <string name="alert_loading">Loading...</string>
+    <string name="msg_no_user_found">No users found for chat!</string>
+    <string name="type_msg">Type message</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_profile_photo">ProfilePhoto</string>
+    <string name="title_activity_custom_dialog">custom_dialog</string>
+    <string name="title_activity_photo_adapter">photoAdapter</string>
+    <string name="title_activity_search_people">Search People</string>
+    <string name="title_activity_checkin">Checkin</string>
+    <string name="title_activity_user_photo">Upload your photo here !</string>
+</resources>

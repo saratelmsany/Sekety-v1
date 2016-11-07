@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#4DD0E1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name"
+        android:layout_toRightOf="@+id/user_photo"
+        android:text="User Name"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:text="day month at hour"
+        android:layout_toRightOf="@+id/user_photo"
+        android:layout_below="@+id/user_name"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_photo"
+        android:padding="16dp"
+        android:id="@+id/post"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/photo"
+        android:layout_below="@id/post"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@id/photo"
+        android:orientation="horizontal"
+        android:background="#E0E0E0">
+        <Button
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Like"
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_margin="0dp"
+            android:drawableLeft="@drawable/like"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Comment"
+            android:id="@+id/commentbtn"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_margin="0dp"
+            android:drawableLeft="@drawable/comment"
+            android:paddingLeft="10dp"
+            android:onClick="myClickHandler"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.sekety.Profile"
+    android:background="#ffffff">
+
+    <TextView
+        android:text="User Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#006064"
+        android:id="@+id/usernameProfile"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        android:layout_gravity="center_vertical"
+
+        android:layout_below="@+id/EditProfile"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:id="@+id/EditProfile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/previewImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#4DD0E1"/>
+
+    <!-- <ImageView
+         android:layout_width="140dp"
+         android:layout_height="100dp"
+         android:src="@drawable/profile"
+         android:id="@+id/previewImageView"
+         android:layout_weight="0.22"
+         android:layout_gravity="center_horizontal"
+         android:layout_alignBottom="@+id/bio"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_alignTop="@+id/EditProfile" />-->
+    <TextView
+        android:text="&quot;Write Your Bio Here!&quot;"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bio"
+        android:textSize="17dp"
+        android:editable="true"
+        android:layout_below="@+id/previewImageView"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentStart="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/statusbarProfile"
+        android:layout_alignTop="@+id/android:list"
+        android:id="@+id/relativeLayout">
+
+
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:id="@+id/statusbarProfile"
+        android:hint="What's Going on?!"
+        android:layout_gravity="bottom"
+        android:layout_weight="1.02"
+        android:layout_alignParentBottom="true"
+        android:focusableInTouchMode="false"
+        android:editable="false"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/android:list"
+        android:layout_above="@+id/statusbarProfile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bio">
+
+    </ListView>
+
+
+</RelativeLayout>
+
+
+

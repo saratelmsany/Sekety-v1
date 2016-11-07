@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#E0F7FA">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#4DD0E1"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textSize="17dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_weight="3"/>
+    <Button
+        android:id="@+id/follow"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="follow"
+        android:drawableLeft="@drawable/adduser"
+        android:textColor="#43B5C3"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:background="#FFFFFF"
+
+        android:layout_centerVertical="true"
+        android:layout_weight="3"/>
+   <!-- <Button
+        android:id="@+id/unfollow"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="following"
+        android:drawableLeft="@drawable/reviewer"
+        android:background="#4DD0E1"
+        android:onClick="Following"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_weight="2"/>-->
+       <!-- android:layout_alignStart="@+id/follow"
+        android:layout_alignParentEnd="true"-->
+
+</LinearLayout>
